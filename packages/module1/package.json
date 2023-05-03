@@ -1,0 +1,33 @@
+{
+  "name": "module1",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Robust TypeScript client for the unofficial Notion API.",
+  "repository": "3bases/notion",
+  "author": "Alan Jo <sungle3737@gmail.com>",
+  "license": "MIT",
+  "main": "./build/index.js",
+  "module": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "build"
+  ],
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "build": "tsup",
+    "watch": "tsup --watch --silent --onSuccess 'echo build successful'",
+    "test": "vitest --run",
+    "prerelease": "standard-version --skip.changelog --prerelease",
+    "release": "standard-version --release-as",
+    "pu": "pnpm publish"
+  },
+  "standard-version": {
+    "skip": {
+      "commit": true,
+      "tag": true
+    }
+  }
+}

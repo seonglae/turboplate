@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "composite": true
+  },
+  "files": [],
+  "include": [],
+  "references": [
+    {
+      "path": "./packages/module1/tsconfig.json"
+    },
+    {
+      "path": "./packages/module2/tsconfig.json"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "name": "workspace",
+      "path": "../"
+    },
+    {
+      "name": "module1",
+      "path": "../packages/module1"
+    },
+    {
+      "name": "module2",
+      "path": "../packages/module2"
+    }
+  ]
+}

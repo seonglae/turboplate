@@ -1,0 +1,35 @@
+{
+  "name": "module2",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Compatibility layer between the official Notion API and unofficial private API.",
+  "repository": "3bases/notion",
+  "author": "Alan Jo <sungle3737@gmail.com>",
+  "license": "MIT",
+  "main": "./build/index.js",
+  "module": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "build"
+  ],
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "build": "tsup",
+    "watch": "tsup --watch --silent --onSuccess 'echo build successful'",
+    "prerelease": "standard-version --skip.changelog --prerelease",
+    "release": "standard-version --release-as",
+    "pu": "pnpm publish"
+  },
+  "dependencies": {
+    "module1": "workspace:^"
+  },
+  "standard-version": {
+    "skip": {
+      "commit": true,
+      "tag": true
+    }
+  }
+}
