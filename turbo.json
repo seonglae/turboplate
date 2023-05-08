@@ -2,6 +2,7 @@
   "baseBranch": "origin/main",
   "pipeline": {
     "build": {},
+    "module2#build": { "dependsOn": ["module1#build"] },
     "release": {},
     "prerelease": {},
     "pu": { "dependsOn": ["build"] }
