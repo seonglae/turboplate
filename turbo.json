@@ -1,6 +1,6 @@
 {
-  "baseBranch": "origin/main",
-  "pipeline": {
+  "$schema": "https://turborepo.dev/schema.json",
+  "tasks": {
     "build": {},
     "module2#build": { "dependsOn": ["module1#build"] },
     "release": {},
